@@ -2,8 +2,7 @@ import { Request, Response } from "express";
 import userModel, { iUser } from "../model/User";
 import { appendFile } from "fs/promises";
 
-export const createStudent = async (
-  req: Request<{}, {}, iUser>,
+export const createStudent = async (req: Request<{}, {}, iUser>,
   res: Response
 ) => {
   try {
